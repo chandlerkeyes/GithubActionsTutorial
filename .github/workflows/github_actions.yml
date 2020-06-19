@@ -18,3 +18,5 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v2
