@@ -10,7 +10,7 @@ on:
 jobs:
   test:
     name: Running Units Tests
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v1
@@ -18,7 +18,3 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install
-      run: npm install
-    - name: Test
-      run: npm test
