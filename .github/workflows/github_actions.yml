@@ -1,11 +1,10 @@
-name: Github Actions Example
+name: Practical TDD with node js 
 
 on:
   pull_request:
   push:
     branches: 
-      - master
-      - develop
+      - main
 
 jobs:
   test:
@@ -21,4 +20,4 @@ jobs:
     - name: Install
       run: npm install
     - name: Test
-      run: npm test
+      run: npm run tests
