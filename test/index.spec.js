@@ -5,7 +5,7 @@ describe("Pencil Durability Kata Tests", () => {
   describe("Writing", () => {
     it("Writes Hello World! on a blank piece of paper", () => {
       const pencil = new Pencil();
-      const result = pencil.writeOnPaper("", "Hello Worl!");
+      const result = pencil.writeOnPaper("", "Hello Worldd!");
 
       expect(result).to.equal("Hello World!");
     });
